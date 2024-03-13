@@ -7,7 +7,7 @@ function validateSyntax() {
 
     // TODO: Write your validation logic here
         // Check if input starts with 'pet_' and followed by alphanumeric characters
-        if (input.startsWith("pet_") && alpha_regex.test(input) && num_regex_regex.test(input)) {
+        if (input.startsWith("pet_") && alpha_regex.test(input) && num_regex.test(input)) {
             result = 'Valid Syntax 🟢';
         } else {
             result = 'Invalid Syntax 🔴';
