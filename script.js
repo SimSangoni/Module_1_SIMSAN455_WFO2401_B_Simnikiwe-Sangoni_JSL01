@@ -2,14 +2,14 @@ function validateSyntax() {
     let input = document.getElementById('petInput').value;
     // Validation logic goes here
     let result = ''; // Placeholder for validation result
-    let regex = /^(?=.*[a-zA-Z])(?=.*\d{4})pet_[a-zA-Z0-9]+$/;
+    let reg_expression = /^(?=.*[a-z A-Z])(?=.*\d)pet_[a-z A-Z 0-9]+$/;
     // ^-- checks what the start of the text begins with (in this case) 'pet_'
     // (?=.*[a-zA-Z]):  Ensures at least one alphabetic character.
-    // (?=.*\d{4}):  Ensures at least 4 numerical digits- this is because date of births have to be at leaat 4.
+    // (?=.*\d):  Ensures at least one numerical digits
 
     // TODO: Write your validation logic here
         // Check if input starts with 'pet_' and followed by alphanumeric characters
-        if (regex.test(input)) {
+        if (reg_expression.test(input)) {
             result = 'Valid Syntax 🟢';
         } else {
             result = 'Invalid Syntax 🔴';
