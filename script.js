@@ -4,7 +4,7 @@ function validateSyntax() {
     let result = ''; // Placeholder for validation result
     let regex = /^(?=.*[a-zA-Z])(?=.*\d{4})pet_[a-zA-Z0-9]+$/;
     // ^-- checks what the start of the text begins with (in this case) 'pet_'
-    //(?=.*[a-zA-Z]):  Ensures at least one alphabetic character.
+    // (?=.*[a-zA-Z]):  Ensures at least one alphabetic character.
     // (?=.*\d{4}):  Ensures at least 4 numerical digits- this is because date of births have to be at leaat 4.
 
     // TODO: Write your validation logic here
